@@ -1,6 +1,7 @@
 /*Web Navigation*/
 .container{
 width:1200px;
+margin:0 auto;
 }
 
 .section{
@@ -59,7 +60,7 @@ text-decoration: none;
 
 .navigation ul{
 display:flex;
-justify-content: space-evenly;
+justify-content: space-between;
 flex-basis: calc(100%/3);
 }
 
