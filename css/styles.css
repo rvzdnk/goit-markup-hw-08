@@ -17,7 +17,7 @@ Border-bottom:1px solid #ECECEC;
 
 .webnavi{
 display:flex;
-justify-content: space-evenly;
+justify-content: space-between;
 height:80px;
 }
 
@@ -557,11 +557,13 @@ transition-duration: 250ms;
 .footer{
 height: 252px;
 background: #2F303A;
-display:flex;
-align-items: baseline;
-justify-content: space-evenly;
 }
 
+.footer-div{
+display:flex;
+align-items: baseline;
+justify-content: space-evenly;   
+}
 .join-us{
 display:flex;
 flex-direction:column;
@@ -1128,6 +1130,7 @@ font-weight: normal;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
+padding:16px;
 
 color: rgba(117, 117, 117, 0.5);   
 }
