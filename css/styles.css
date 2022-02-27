@@ -11,11 +11,12 @@ display:flex;
 justify-content: center;
 }
 
-.webnavi-parent{
-Border-bottom:1px solid #ECECEC;
+.header{
+
+border-bottom:1px solid #ECECEC;
 }
 
-.webnavi{
+.header__box{
 display:flex;
 justify-content: space-between;
 height:80px;
@@ -37,7 +38,7 @@ display:flex;
 align-items: center;
 }
 
-.webstudio{
+.logo-header{
 font-family: 'Raleway';
 font-style: normal;
 font-weight: bold;
@@ -53,7 +54,7 @@ color: #2196F3;
 display:flex;
 }
 
-.studio{
+.logo-header__link{
 color: #212121;
 text-decoration: none; 
 }
@@ -64,48 +65,31 @@ justify-content: space-between;
 flex-basis: calc(100%/3);
 }
 
-.menu-web li{
+.navigation__menu li{
 list-style: none;
 padding-right: 20px; 
 }
 
-.menu-web a{
+.navigation__menu a{
 text-decoration:none;
 }
 
-.portfolio1{
+.navigation__link{
 color:#212121
 }
 
-.contact1{
-color:#212121
-}
-
-.agency2{
-color:#212121
-}
-
-.contact2{
-color:#212121
-}
-
-.menu-web a:hover{
+.navigation__menu a:hover{
 color: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 }
 
-.agency1{
+.navigation__link--current-page{
 position:relative;
 color:#2196F3 
 }
 
-.portfolio2{
-position:relative;
-color:#2196F3 
-}
-
-.agency1::after
+.navigation__link--agency::after
 {
 content:"";
 
@@ -120,7 +104,7 @@ position:absolute;
 top: 45px;
 }
 
-.portfolio2::after{
+.navigation__link--portfolio::after{
 content:"";
 
 width: 58px;
@@ -134,7 +118,7 @@ position:absolute;
 top: 45px;
 }
 
-.contact-menu{
+.header-contact{
 display:flex;
 align-items: center;
 
@@ -144,42 +128,42 @@ font-weight: 500;
 font-size: 14px;
 }
 
-.contact-menu a{
+.header-contact a:first-child{
 margin-right: 20px; 
 }
 
-.contact-menu-mail{
+.header-contact-mail{
 text-decoration:none;
 color: #757575;
 }
-.contact-menu-mail:hover{
+.header-contact-mail:hover{
 color: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 }
 
-.icon-mail{
+.header-contact-mail__icon{
 fill: #757575;    
 }
 
-.contact-menu-mail:hover
+.header-contact-mail:hover
 svg{
 fill: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;   
 }
 
-.contact-menu-tel{
+.header-contact-tel{
 text-decoration:none;
 color: #757575;
 }
-.contact-menu-tel:hover{
+.header-contact-tel:hover{
 color: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 }
 
-.contact-menu-tel:hover
+.header-contact-tel:hover
 svg{ 
 fill:#2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
