@@ -187,7 +187,7 @@ align-items:center;
 height: 600px;
 }
 
-.theme-h{
+.theme__header{
 width: 696px;
 
 font-family: Roboto;
@@ -203,7 +203,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.theme-button{
+.theme__button{
 width: 200px;
 height: 50px;
 
@@ -230,11 +230,11 @@ display:flex;
 justify-content:space-evenly;
 }
 
-.p1{
+.description__paragraph{
 width: 270px;
 }
 
-.rect{
+.description__box{
 border-radius: 4px;
 background:#F5F4FA;
 width:270px;
@@ -244,19 +244,7 @@ justify-content: center;
 align-items:center;   
 }
 
-.p2{
-width: 270px;
-}
-
-.p3{
-width: 270px;
-}
-
-.p4{
-width: 270px;
-}
-
-.description-title{
+.description__title{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -267,7 +255,7 @@ text-transform: uppercase;
 color: #212121;
 }
 
-.description-text{
+.description__text{
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -278,12 +266,12 @@ color: #757575;
 }  
 
 /*What we do?*/
-.what-we-do-section{
+.services{
 padding-top:0px;
 padding-bottom:0px;
 }
 
-.title-what-we-do{
+.services__header{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -296,14 +284,14 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.what-we-do-list{
+.services__list{
 display:flex;
 list-style: none;
 justify-content:space-evenly;
 padding-left:0;
 }
 
-.do-name{
+.services__name{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -320,7 +308,7 @@ top:50%;
 transform:translateY(-50%);
 }
 
-.do-box{
+.services__box{
 width: 370px;
 height: 70px;
 
@@ -332,24 +320,11 @@ z-index:0;
 bottom:82px;
 }
 
-.do-container{
-z-index:0;
-}
-
-.do1{
+.services__figure{
 width: 370px;
 height: 294px; 
 }
 
-.do2{
-width: 370px;
-height: 294px;  
-}
-
-.do3{
-width: 370px;
-height: 294px;
-}
 
 /*Our Team*/
 .team{
@@ -358,7 +333,7 @@ background: #F5F4FA;
 padding: left 80px;
 }
 
-.title-team{
+.team__header{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -373,7 +348,7 @@ display:flex;
 justify-content:center;
 }
 
-.team-container {
+.team__list {
 display:flex;
 list-style: none;
 justify-content:space-evenly;
@@ -381,7 +356,7 @@ align-items:center;
 padding-left:0;
 }
 
-.team1{
+.team__figure{
 width: 270px;
 height: 428px;
 background: #FFFFFF;
@@ -389,31 +364,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 border-radius: 0px 0px 4px 4px;
 }
 
-.team2{
-width: 270px;
-height: 428px;
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;   
-}
-
-.team3{
-width: 270px;
-height: 428px;
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;      
-}
-
-.team4{
-width: 270px;
-height: 428px;
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px; 
-}
-
-.team-name{
+.team__name{
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -424,7 +375,7 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.team-position{
+.team__position{
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -435,23 +386,23 @@ letter-spacing: 0.03em;
 color: #757575;    
 }
 
-ul.social-list{
+ul.social-media{
     padding:0;
     padding-left:20px;
 }
 
-.social-list{
+.social-media{
 list-style: none;
 display:flex;
 justify-content: center;
 padding-left:23.5px;
 }
 
-.social-icon{
+.social-media__icon{
 fill:#AFB1B8
 }
 
-.social-list-link{
+.social-media__link{
 width:44px;
 height:44px;
 background-color:#FFFFFF;
@@ -461,13 +412,13 @@ justify-content: center;
 align-items: center; 
 }
 
-.social-list-link:hover{
+.social-media__link:hover{
 background: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;  
 }
 
-.social-list-link:hover
+.social-media__link:hover
 svg{
 fill: #FFFFFF;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
@@ -476,13 +427,13 @@ transition-duration: 250ms;
 
 
 /*Our clients*/
-.our-clients{
+.clients{
 display:flex;
 align-items: center;
 justify-content: center;
 }
 
-.h-clients{
+.clients__header{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -493,25 +444,21 @@ letter-spacing: 0.03em;
 color: #212121;   
 }
 
-.clients-list{
+.clients__list{
 list-style: none;
 display:flex;
 padding-left:0;
 }
 
-.clients-list li{
+.clients__list li:not(:last-child){
 padding-right:20px;
 }
 
-li.client6{
-padding-right:0;
-}
-
-.icon-client{
+.clients__icon{
 fill:#AFB1B8;
 }
 
-.client-list-link{
+.clients__link{
 width: 170px;
 height: 92px;
 
@@ -524,13 +471,13 @@ justify-content: center;
 align-items: center;
 }
 
-.client-list-link:hover{
+.clients__link:hover{
 border-color:#2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;  
 }
 
-.client-list-link:hover
+.clients__link:hover
 svg{
 fill:#2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
