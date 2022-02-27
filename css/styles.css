@@ -490,21 +490,17 @@ height: 252px;
 background: #2F303A;
 }
 
-.footer-div{
+.footer__div{
 display:flex;
 align-items: baseline;
 justify-content: space-evenly;   
 }
-.join-us{
-display:flex;
-flex-direction:column;
-}
 
-.social-list-footer{
-padding:0;
-}
 
-.webstudio-footer{
+
+
+
+.footer-logo{
 width: 145px;
 height: 31px;
 font-family: Raleway;
@@ -520,12 +516,12 @@ display:flex;
 padding-left:0;
 }
 
-.studio-footer{
+.footer-logo__link{
 text-decoration: none;
 color:#fff;
 }
 
-.contact-box-footer{
+.footer-contact{
 display:flex;
 flex-direction: column;
 }
@@ -543,7 +539,7 @@ color: #FFFFFF;
 margin-bottom:9px;
 }
 
-.mail-footer{
+.footer-contact__mail{
 width: 231px;
 height: 21px;
 font-family: Roboto;
@@ -553,10 +549,11 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-margin-bottom:9px;   
+margin-bottom:9px;
+text-decoration: none;  
 }
 
-.tel-footer{
+.footer-contact__tel{
 width: 231px;
 height: 21px;
 font-family: Roboto;
@@ -565,36 +562,43 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);    
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;      
 }
 
-.social-list-footer {
+.join-us{
+    display:flex;
+    flex-direction:column;
+    }
+
+.h-join-us{   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin:0;
+    }
+
+.social-media-footer {
 list-style: none;
 display:flex;
+padding:0;
 }
 
-.social-list-footer li{
+.social-media-footer li:not(:last-child){
 padding-right:10px;
 }
 
 
-.h-join-us{   
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin:0;
-}
-
-.icon-footer {
+.social-media-footer__icon {
 fill:#FFFFFF
 }
 
-.social-list-link-footer{
+.social-media-footer__link{
 width:44px;
 height:44px;
 background-color:rgba(255, 255, 255, 0.1);
@@ -604,13 +608,13 @@ justify-content: center;
 align-items: center;
 }
 
-.social-list-link-footer:hover{
+.social-media-footer__link:hover{
 background: #2196F3;
 transition: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;   
 }
 
-.h-newsletter{
+.newsletter__header{
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -622,17 +626,17 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.sign-up-box{
+.newsletter__form{
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-.sign-up-box form{ 
+.newsletter__form form{ 
 padding-right: 12px;
 }
 
-.newsletter-email{
+.newsletter__mail{
 width: 358px;
 height: 50px;
       
@@ -645,7 +649,7 @@ background:transparent;
 padding-left:16px;  
 }
 
-.newsletter-email::placeholder{
+.newsletter__mail::placeholder{
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -659,7 +663,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6); 
 }
 
-.sign-up-btn{
+.newsletter__btn{
 width: 200px;
 height: 50px;
      
