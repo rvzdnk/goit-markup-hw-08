@@ -34,22 +34,18 @@
     color: #FFFFFF;
     padding:24px;
     }
-        
-.portfolio__box:hover
-.overlay{
+ 
+.portfolio__box{
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay{
     transform: translateY(0);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;  
     }
-
-    
-.portfolio__box{
-    position: relative;
-    overflow: hidden;
     }
-    
-    
-    
+ 
 .portfolio__list li{
     flex-basis: calc(100%/3 -10px);
     margin-left: 10px;

@@ -16,48 +16,52 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+
+    & a:first-child{
+        margin-right: 20px; 
     }
+}
         
-.header-contact a:first-child{
-    margin-right: 20px; 
-    }
+
         
 .header-contact-mail{
     text-decoration:none;
     color: #757575;
-    }
-        
-.header-contact-mail:hover{
-    color: #2196F3;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    }
-        
-.header-contact-mail__icon{
-    fill: #757575;    
-    }
-        
-.header-contact-mail:hover
-svg{
+
+    &:hover{
+        color: #2196F3;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover svg{
     fill: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;   
+        }
     }
-        
+}
+              
+.header-contact-mail__icon{
+    fill: #757575;    
+    }
+               
 .header-contact-tel{
     text-decoration:none;
     color: #757575;
-    }
-        
-.header-contact-tel:hover{
-    color: #2196F3;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    }
-        
-.header-contact-tel:hover
-    svg{ 
+
+    &:hover{
+        color: #2196F3;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover svg{ 
     fill:#2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;   
-    }      
+        } 
+    }
+}
+        
+
+        
+     

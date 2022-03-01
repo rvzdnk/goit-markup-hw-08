@@ -45,8 +45,7 @@ figure {
   pointer-events: none;
 }
 
-.is-hidden
-.modal {
+.is-hidden .modal {
   transform: translate3d(0, -2rem, 0);
   opacity: 0;
 }
@@ -276,6 +275,14 @@ figure {
   outline: none;
 }
 
+.comment:focus {
+  border: 1px solid #2196F3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
 .comment::placeholder {
   font-family: Roboto;
   font-style: normal;
@@ -285,14 +292,6 @@ figure {
   letter-spacing: 0.01em;
   padding: 16px;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.comment:focus {
-  border: 1px solid #2196F3;
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .user-policy__text {
@@ -349,7 +348,6 @@ figure {
 
 ul.social-media {
   padding: 0;
-  padding-left: 20px;
 }
 
 .social-media {
@@ -357,6 +355,10 @@ ul.social-media {
   display: flex;
   justify-content: center;
   padding-left: 23.5px;
+}
+
+.social-media li:not(:last-child) {
+  padding-right: 10px;
 }
 
 .social-media__icon {
@@ -379,8 +381,7 @@ ul.social-media {
   transition-duration: 250ms;
 }
 
-.social-media__link:hover
-svg {
+.social-media__link:hover svg {
   fill: #FFFFFF;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -434,8 +435,7 @@ svg {
   transition-duration: 250ms;
 }
 
-.clients__link:hover
-svg {
+.clients__link:hover:hover svg {
   fill: #2196F3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -642,15 +642,14 @@ svg {
   transition-duration: 250ms;
 }
 
-.header-contact-mail__icon {
-  fill: #757575;
-}
-
-.header-contact-mail:hover
-svg {
+.header-contact-mail:hover:hover svg {
   fill: #2196F3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+}
+
+.header-contact-mail__icon {
+  fill: #757575;
 }
 
 .header-contact-tel {
@@ -664,8 +663,7 @@ svg {
   transition-duration: 250ms;
 }
 
-.header-contact-tel:hover
-svg {
+.header-contact-tel:hover:hover svg {
   fill: #2196F3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -768,16 +766,15 @@ svg {
   padding: 24px;
 }
 
-.portfolio__box:hover
-.overlay {
-  transform: translateY(0);
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 .portfolio__box {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__box:hover .overlay {
+  transform: translateY(0);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .portfolio__list li {
@@ -847,7 +844,7 @@ svg {
   cursor: pointer;
 }
 
-.portfolio-buttons button:hover {
+.portfolio-buttons button button:hover {
   background: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;

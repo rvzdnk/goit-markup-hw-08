@@ -40,17 +40,19 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    }
 
-.clients__link:hover{
-    border-color:#2196F3;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;  
-    }
+    &:hover{
+        border-color:#2196F3;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;  
+        
 
-.clients__link:hover
-svg{
+        &:hover svg{
     fill:#2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;      
     }
+    }
+}
+
+

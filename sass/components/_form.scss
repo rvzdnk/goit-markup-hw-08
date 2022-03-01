@@ -50,9 +50,8 @@
     
     padding: 12px 0px 12px 42px;
     outline:none;
-    }
-    
-.firstname:focus{
+   
+    &:focus{
     border: 1px solid #2196F3;
     box-sizing: border-box;
     border-radius: 4px;
@@ -64,7 +63,7 @@
     
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    } 
+    }}
     
 .telephone{
     width: 448px;
@@ -81,9 +80,8 @@
     
     padding: 12px 0px 12px 42px;
     outline:none;
-    }
-    
-.telephone:focus{
+   
+    &:focus{
     border: 1px solid #2196F3;
     box-sizing: border-box;
     border-radius: 4px;
@@ -95,7 +93,7 @@
     
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    }
+    }}
     
 .email{
     width: 448px;
@@ -112,9 +110,8 @@
     
     padding: 12px 0px 12px 42px;
     outline:none;
-    }
     
-.email:focus{
+    &:focus{
     border: 1px solid #2196F3;
     box-sizing: border-box;
     border-radius: 4px;
@@ -126,7 +123,7 @@
     
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    }
+    }}
     
 .comment{
     width: 448px;
@@ -138,8 +135,16 @@
     resize: none;
     
     outline:none;
-    }
     
+&:focus{
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px; 
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }}
+
 .comment::placeholder{
     font-family: Roboto;
     font-style: normal;
@@ -150,18 +155,8 @@
     padding:16px;
     
     color: rgba(117, 117, 117, 0.5);   
-    }
-    
-.comment:focus{
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px; 
-    
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    }
-    
-    
+}
+       
 .user-policy__text{
     font-family: Roboto;
     font-style: normal;
@@ -173,12 +168,11 @@
     letter-spacing: 0.03em;
     
     color: #757575;  
-    }
     
-.user-policy__text a{
+    & a{
         color: #2196F3;
-    }
-    
+    }}
+
 .user-policy__text::before{
     content:"";
     
@@ -189,7 +183,7 @@
     
     border-radius: 2px;
     border: 2px solid #212121;
-    }
+}
     
 .user-policy:checked + .user-policy__text::before{
     background-color: #2196F3;    
