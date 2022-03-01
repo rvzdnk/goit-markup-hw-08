@@ -1,0 +1,63 @@
+.header{
+    border-bottom:1px solid #ECECEC;
+    }
+    
+.header__box{
+    display:flex;
+    justify-content: space-between;
+    height:80px;
+    }
+
+.header-contact{
+    display:flex;
+    align-items: center;
+        
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    }
+        
+.header-contact a:first-child{
+    margin-right: 20px; 
+    }
+        
+.header-contact-mail{
+    text-decoration:none;
+    color: #757575;
+    }
+        
+.header-contact-mail:hover{
+    color: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+        
+.header-contact-mail__icon{
+    fill: #757575;    
+    }
+        
+.header-contact-mail:hover
+svg{
+    fill: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;   
+    }
+        
+.header-contact-tel{
+    text-decoration:none;
+    color: #757575;
+    }
+        
+.header-contact-tel:hover{
+    color: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+        
+.header-contact-tel:hover
+    svg{ 
+    fill:#2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;   
+    }      

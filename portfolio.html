@@ -4,7 +4,7 @@
             <meta charset="UTF-8"/>
             <title>WebStudio</title>
             <link rel="stylesheet" href="./css/modern-normalize.css">
-            <link rel="stylesheet" href="./css/styles.css">
+            <link rel="stylesheet" href="./css/main.min.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
@@ -54,28 +54,28 @@
         </header>
     <main>
 <!--Buttons-->
-<div class="buttons">
-    <div class="container portfolio-buttons">
-    <button class="all">Wszystkie</button>
-    <button class="sites">Strony</button>
-    <button class="apps">Aplikacje</button>
-    <button class="designs">Dizajn</button>
-    <button class="marketings">Marketing</button>
-    </div>          
-</div>
+
+<div class="container portfolio-buttons">
+    <button class="portfolio-buttons--all">Wszystkie</button>
+    <button class="portfolio-buttons--sites">Strony</button>
+    <button class="portfolio-buttons--apps">Aplikacje</button>
+    <button class="portfolio-buttons--designs">Dizajn</button>
+    <button class="portfolio-buttons--marketings">Marketing</button>
+</div>          
+
 <!--Porftolio Pics-->
-<div class="portfolio-pics section">
+<div class="section">
     <div class="container">
-    <ul class="pics-list">
+    <ul class="portfolio__list">
 <li>
-    <figure class="portfolio-1 sites portfolio-figure">
-            <div class="portfolio-box">
+    <figure class="portfolio__figure">
+            <div class="portfolio__box">
             <img src="./images/portfolio-1-strona.jpg"
         alt="technocrack-website"
         width="370px"
         height="294px"/>
          <div class="overlay">
-            <p class="overlay-text">
+            <p class="overlay__text">
             Technocrack jest popularną platformą wykorzystywaną 
             do rozpowszechniania koronawirusa. 
             Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -83,22 +83,22 @@
             </p>
             </div>
         </div>
-        <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Technocrack</p>
-        <p class="portfolio-description">Strona internetowa</p>
+        <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Technocrack</p>
+        <p class="portfolio__description">Strona internetowa</p>
         </figcaption>   
     </figure>
     
 </li>
 <li>
-    <figure class="portfolio-2 design portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-2-dizajn.jpg"
     alt="technocrack-website"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -106,22 +106,22 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Grafika New Orlean vs Golden Star</p>
-        <p class="portfolio-description">Dizajn</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Grafika New Orlean vs Golden Star</p>
+        <p class="portfolio__description">Dizajn</p>
     </figcaption>   
         </figure>
       
 </li>
 <li>
-    <figure class="portfolio-3 app portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-3-aplikacja.jpg"
     alt="restaurant-seafood-aplication"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -129,22 +129,22 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Restauracja Seafood</p>
-        <p class="portfolio-description">Aplikacja</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Restauracja Seafood</p>
+        <p class="portfolio__description">Aplikacja</p>
     </figcaption>  
         </figure>
    
 </li>
 <li>
-    <figure class="portfolio-4 marketing portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-4-marketing.jpg"
     alt="project-prime-marketing"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -152,21 +152,21 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Projekt Prime</p>
-        <p class="portfolio-description">Marketing</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Projekt Prime</p>
+        <p class="portfolio__description">Marketing</p>
     </figcaption>  
         </figure>
 </li>
 <li>
-    <figure class="portfolio-5 app portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-5-aplikacja.jpg"
     alt="project-boxes-app"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -174,21 +174,21 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Projekt Boxes</p>
-        <p class="portfolio-description">Aplikacja</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Projekt Boxes</p>
+        <p class="portfolio__description">Aplikacja</p>
     </figcaption>  
             </figure>
 </li>
 <li>
-    <figure class="portfolio-6 sites portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-6-strona.jpg"
     alt="inspiration-has-no-borders-website"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -196,20 +196,20 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Inspiration has no Borders</p>
-        <p class="portfolio-description">Strona internetowa</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Inspiration has no Borders</p>
+        <p class="portfolio__description">Strona internetowa</p>
     </figcaption> 
         </figure>
 <li>
-    <figure class="portfolio-7 design portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-7-dizajn.jpg"
     alt="magazine-limited-edition-design"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -217,21 +217,21 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Magazyn Limited Edition</p>
-        <p class="portfolio-description">Dizajn</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Magazyn Limited Edition</p>
+        <p class="portfolio__description">Dizajn</p>
     </figcaption>
         </figure>
 </li>
 <li>
-    <figure class="portfolio-8 marketing portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-8-marketing.jpg"
     alt="project-lab-marketing"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -239,21 +239,21 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Projekt LAB</p>
-        <p class="portfolio-description">Marketing</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Projekt LAB</p>
+        <p class="portfolio__description">Marketing</p>
     </figcaption>
         </figure>
 </li>
 <li>
-    <figure class="portfolio-9 app portfolio-figure">
-        <div class="portfolio-box">
+    <figure class="portfolio__figure">
+        <div class="portfolio__box">
         <img src="./images/portfolio-9-aplikacja.jpg"
     alt="project-lab-marketing"
     width="370px"
     height="294px"/>
     <div class="overlay">
-        <p class="overlay-text">
+        <p class="overlay__text">
         Technocrack jest popularną platformą wykorzystywaną 
         do rozpowszechniania koronawirusa. 
         Firmy wykorzystują tę platformę do celów szpiegowskich 
@@ -261,9 +261,9 @@
         </p>
         </div>
     </div>
-    <figcaption class="portfolio-figcaption">
-        <p class="portfolio-title">Growing Business</p>
-        <p class="portfolio-description">Aplikacja</p>
+    <figcaption class="portfolio__figcaption">
+        <p class="portfolio__title">Growing Business</p>
+        <p class="portfolio__description">Aplikacja</p>
     </figcaption>
         </figure>
 </li>

@@ -1,0 +1,205 @@
+.form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+    }
+    
+.form__header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    
+    color: #212121;
+    
+    display:flex;
+    justify-content: center;
+    margin:0;
+    }
+    
+.form__label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17px;
+    
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+    }
+    
+.firstname{
+    width: 448px;
+    height: 40px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-name.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    padding: 12px 0px 12px 42px;
+    outline:none;
+    }
+    
+.firstname:focus{
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-name-focus.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    } 
+    
+.telephone{
+    width: 448px;
+    height: 40px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-tel.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    padding: 12px 0px 12px 42px;
+    outline:none;
+    }
+    
+.telephone:focus{
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-tel-focus.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+    
+.email{
+    width: 448px;
+    height: 40px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-mail.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    padding: 12px 0px 12px 42px;
+    outline:none;
+    }
+    
+.email:focus{
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    background-image: url(../images/form-mail-focus.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+    
+.comment{
+    width: 448px;
+    height: 120px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    
+    outline:none;
+    }
+    
+.comment::placeholder{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    padding:16px;
+    
+    color: rgba(117, 117, 117, 0.5);   
+    }
+    
+.comment:focus{
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px; 
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+    
+    
+.user-policy__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;  
+    }
+    
+.user-policy__text a{
+        color: #2196F3;
+    }
+    
+.user-policy__text::before{
+    content:"";
+    
+    display:inline-block;
+    
+    width:16px;
+    height:15px;
+    
+    border-radius: 2px;
+    border: 2px solid #212121;
+    }
+    
+.user-policy:checked + .user-policy__text::before{
+    background-color: #2196F3;    
+    border-radius: 2px;
+    background-image: url(../images/checkbox.svg) ;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    }
+

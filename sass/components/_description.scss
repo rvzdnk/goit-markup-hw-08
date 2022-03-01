@@ -1,0 +1,39 @@
+.description{
+    display:flex;
+    justify-content:space-evenly;
+    }
+    
+.description__paragraph{
+    width: 270px;
+    }
+    
+.description__box{
+    border-radius: 4px;
+    background:#F5F4FA;
+    width:270px;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    }
+    
+.description__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    }
+    
+.description__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;    
+    }  
