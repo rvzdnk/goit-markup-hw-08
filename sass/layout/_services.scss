@@ -3,19 +3,6 @@
     padding-bottom:0px;
     }
     
-.services__header{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;    
-    
-    color: #212121;
-    }
-    
 .services__list{
     display:flex;
     list-style: none;
@@ -24,7 +11,7 @@
     }
 
 .services__name{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -33,7 +20,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
         
-    color: #FFFFFF;
+    color: $third-color;
     
     position: relative;
     top:50%;

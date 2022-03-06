@@ -1,5 +1,5 @@
-.logo-header{
-    font-family: 'Raleway';
+.logo{
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -8,13 +8,17 @@
     text-decoration: none;
     list-style:none;
     padding-left:0px;
+    letter-spacing: 0.03em;
     
-    color: #2196F3;
+    color: $main-color;
     
     display:flex;
     }
     
-.logo-header__link{
-    color: #212121;
-    text-decoration: none; 
+.logo__link{
+    color: $secondary-color;
+    }
+
+.logo__link--footer{
+    color:#fff;
     }

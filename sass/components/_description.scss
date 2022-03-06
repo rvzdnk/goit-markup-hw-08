@@ -9,7 +9,7 @@
     
 .description__box{
     border-radius: 4px;
-    background:#F5F4FA;
+    background: $fourth-color;
     width:270px;
     height:120px;
     display:flex;
@@ -18,22 +18,22 @@
     }
     
 .description__title{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: $secondary-color;
     }
     
 .description__text{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;    
+    color: $fifth-color;    
     }  

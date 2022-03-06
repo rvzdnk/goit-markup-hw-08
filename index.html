@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
     <style>
         .body{
-            font-family:'Roboto', sans-serif;
-            color:#212121;
+            font-family:'$main-font', sans-serif;
+            color:'$main-color','$secondary-color';
         }
     
     </style> 
@@ -24,9 +24,9 @@
     <header class="header">
         <div class="header__box container">
         <nav class="navigation">
-            <ul class="logo-header">
+            <ul class="logo">
                 <li>Web</li>
-                <li><a href="./index.html" class="logo-header__link">Studio</a></li>
+                <li><a href="./index.html" class="logo__link">Studio</a></li>
             </ul>
             <ul class="navigation__menu">
                 <li><a href="./index.html" class="navigation__link navigation__link--current-page navigation__link--agency">Agencja</a></li>
@@ -104,7 +104,7 @@
 <div class="services section">
     <div class="container">
         <div>
-            <h2 class="services__header">Czym się zajmujemy?</h2>
+            <h2 class="secondary-header">Czym się zajmujemy?</h2>
         </div>
         <div>
             <ul class="services__list">
@@ -161,7 +161,7 @@
 <div class="team section">
     <div class="container">
         <div>
-            <h2 class="team__header">Nasz zespół</h2>
+            <h2 class="secondary-header">Nasz zespół</h2>
         </div>
         <div>
             <ul class="team__list">
@@ -340,7 +340,7 @@
 <!--Our clients-->
 <div class="section">
     <div class="container clients">
-        <h class="clients__header">Nasi klienci</h2>
+        <h class="secondary-header">Nasi klienci</h2>
         <ul class="clients__list">
             <li>
                 <a class="clients__link" href="#">
@@ -392,9 +392,9 @@
 <footer class="footer">
     <div class="footer__div container">
         <div>
-            <ul class="footer-logo">
+            <ul class="logo">
                 <li>Web</li>
-                <li><a href="./index.html" class="footer-logo__link">Studio</a></li>
+                <li><a href="./index.html" class="logo__link--footer">Studio</a></li>
             </ul>
             <address>  
                 <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
@@ -409,31 +409,31 @@
                 <h3 class="h-join-us">Dołącz do nas</h3>
             </div>
             <div>
-                <ul class="social-media-footer">
+                <ul class="social-media">
                     <li>
-                        <a class="social-media-footer__link" href="#">
-                            <svg class="social-media-footer__icon" width="20" height="20">
+                        <a class="social-media__link social-media__link--footer" href="#">
+                            <svg class="social-media__icon--footer" width="20" height="20">
                                 <use href="./images/icon.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-media-footer__link" href="#">
-                            <svg class="social-media-footer__icon" width="20" height="20">
+                        <a class="social-media__link social-media__link--footer" href="#">
+                            <svg class="social-media__icon--footer" width="20" height="20">
                                 <use href="./images/icon.svg#icon-twitter1"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-media-footer__link" href="#">
-                            <svg class="social-media-footer__icon" width="20" height="20">
+                        <a class="social-media__link social-media__link--footer" href="#">
+                            <svg class="social-media__icon--footer" width="20" height="20">
                                 <use href="./images/icon.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-media-footer__link" href="#">
-                            <svg class="social-media-footer__icon" width="20" height="20">
+                        <a class="social-media__link social-media__link--footer" href="#">
+                            <svg class="social-media__icon--footer" width="20" height="20">
                                 <use href="./images/icon.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -470,18 +470,18 @@
         <form class="form" name="leave-your-data" autocomplete="off" novalidate method="post" >
             <h4 class="form__header">Zostaw swoje dane w formularzu poniżej</h4>
             <label for="firstname" class="form__label">Imię</label>
-            <input type="text" id="firstname" name="firstname" class="firstname"/>
+            <input type="text" id="firstname" name="firstname" class="form__input form__input--firstname"/>
             <label for="telephone" class="form__label">Telefon</label>
-            <input type="tel" id="telephone" name="telephone" class="telephone"/>
+            <input type="tel" id="telephone" name="telephone" class="form__input form__input--telephone"/>
             <label for="email" class="form__label">Email</label>
-            <input type="email" id="email" name="email" class="email"/>
+            <input type="email" id="email" name="email" class="form__input form__input--email"/>
             <label for="comment" class="form__label">Komentarz</label>
-            <textarea name="comment" id="comment" rows="4" placeholder="Wprowadź tekst" class="comment"></textarea>
-            <label class="user-policy">
-                <input type="checkbox" id="user-policy" name="user-policy" class="user-policy visually-hidden"/>    
-                <span class="user-policy__text">   Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
+            <textarea name="comment" id="comment" rows="4" placeholder="Wprowadź tekst" class="form__textarea--comment"></textarea>
+            <label class="form__user-policy">
+                <input type="checkbox" id="form__user-policy" name="user-policy" class="user-policy visually-hidden"/>    
+                <span class="form__user-policy--text">   Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
             </label>
-            <button type="submit" class="modal__submit-btn">Wyślij</button>
+            <button type="submit" class="form__submit-btn">Wyślij</button>
         </form>    
     </div>
 </div>    

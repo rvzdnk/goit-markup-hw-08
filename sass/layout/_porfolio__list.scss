@@ -23,7 +23,7 @@
     }
         
 .overlay__text{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -31,7 +31,7 @@
     line-height: 28px;
     letter-spacing: 0.03em;
         
-    color: #FFFFFF;
+    color: $third-color;
     padding:24px;
     }
  
@@ -55,8 +55,8 @@
 .portfolio__list figure{
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
-    border-bottom: 1px solid #EEEEEE;
+    background: $third-color;
+    border-bottom: 1px solid $porftolio__list-border-color;
     }
     
 .portfolio__figure:hover{
@@ -73,23 +73,23 @@
     }
     
 .portfolio__title{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;  
-    color: #212121;
+    color: $secondary-color;
     margin:0;
     }
     
 .portfolio__description{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $fifth-color;
     margin:0;
     }

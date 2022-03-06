@@ -1,5 +1,6 @@
 
 @import "./utils/visually-hidden";
+@import "./utils/variables";
 
 @import "./base/common";
 @import "./base/container";
@@ -8,10 +9,10 @@
 @import "./components/modal";
 @import "./components/backdrop";
 @import "./components/description";
-@import "./components/footer-logo";
 @import "./components/form";
-@import "./components/logo-header";
+@import "./components/logo";
 @import "./components/social-media";
+@import "./components/secondary-header";
 
 @import "./layout/clients";
 @import "./layout/footer";

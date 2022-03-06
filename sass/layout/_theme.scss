@@ -17,7 +17,7 @@
 .theme__header{
     width: 696px;
     
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -27,14 +27,14 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: $third-color;
     }
     
 .theme__button{
     width: 200px;
     height: 50px;
     
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -44,8 +44,8 @@
     text-align: center;
     letter-spacing: 0.06em;
     
-    color: #FFFFFF; 
-    background: #2196F3;
+    color: $third-color; 
+    background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;

@@ -1,44 +1,45 @@
-ul.social-media{
-    padding:0;
-}
-
-
-
 .social-media{
     list-style: none;
     display:flex;
     justify-content: center;
-    padding-left:23.5px;
+    padding:0;
+
     
     & li:not(:last-child){
         padding-right:10px;   
+        }
 }
-}
-
 
 .social-media__icon{
     fill:#AFB1B8
-}
+    }
+
+.social-media__icon--footer {
+    fill:$third-color
+    }
 
 .social-media__link{
     width:44px;
     height:44px;
-    background-color:#FFFFFF;
+    background-color:$third-color;
     border-radius: 50%;
     display: flex; 
     justify-content: center; 
     align-items: center;
     
     &:hover{
-        background: #2196F3;
+        background: $main-color;
         transition: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;  
     
     & svg{
-    fill: #FFFFFF;
+    fill: $third-color;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;  
 }    
 }
 }
 
+.social-media__link--footer{
+    background-color:rgba(255, 255, 255, 0.1);
+}

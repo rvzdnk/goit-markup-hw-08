@@ -7,7 +7,7 @@
     }
     
 .form__header{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -16,7 +16,7 @@
     letter-spacing: 0.03em;
     white-space: nowrap;
     
-    color: #212121;
+    color: $secondary-color;
     
     display:flex;
     justify-content: center;
@@ -24,7 +24,7 @@
     }
     
 .form__label{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -32,10 +32,9 @@
     
     letter-spacing: 0.01em;
     
-    color: #757575;
+    color: $fifth-color;
     }
-    
-.firstname{
+.form__input{
     width: 448px;
     height: 40px;
     
@@ -43,89 +42,50 @@
     box-sizing: border-box;
     border-radius: 4px;
     
-    background-image: url(../images/form-name.svg);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 15px;
-    
+
     padding: 12px 0px 12px 42px;
     outline:none;
+}    
+.form__input--firstname{
+    background-image: url(../images/form-name.svg);
    
     &:focus{
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px;
+    border: 1px solid $main-color;
     
-    background-image: url(../images/form-name-focus.svg);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
+    background-image: url(../images/form-name-focus.svg); 
     
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     }}
     
-.telephone{
-    width: 448px;
-    height: 40px;
-    
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    
+.form__input--telephone{
     background-image: url(../images/form-tel.svg);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
     
-    padding: 12px 0px 12px 42px;
-    outline:none;
-   
     &:focus{
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px;
+    border: 1px solid $main-color;
     
     background-image: url(../images/form-tel-focus.svg);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
-    
+  
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     }}
     
-.email{
-    width: 448px;
-    height: 40px;
-    
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    
+.form__input--email{
     background-image: url(../images/form-mail.svg);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
-    
-    padding: 12px 0px 12px 42px;
-    outline:none;
     
     &:focus{
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px;
+    border: 1px solid $main-color;
     
     background-image: url(../images/form-mail-focus.svg);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
-    
+  
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     }}
     
-.comment{
+.form__textarea--comment{
     width: 448px;
     height: 120px;
     
@@ -137,16 +97,14 @@
     outline:none;
     
 &:focus{
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px; 
+    border: 1px solid $main-color;
     
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     }}
 
-.comment::placeholder{
-    font-family: Roboto;
+.form__textarea--comment::placeholder{
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -157,8 +115,8 @@
     color: rgba(117, 117, 117, 0.5);   
 }
        
-.user-policy__text{
-    font-family: Roboto;
+.form__user-policy--text{
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -167,13 +125,13 @@
     
     letter-spacing: 0.03em;
     
-    color: #757575;  
+    color: $fifth-color;  
     
     & a{
-        color: #2196F3;
+        color: $main-color;
     }}
 
-.user-policy__text::before{
+.form__user-policy--text::before{
     content:"";
     
     display:inline-block;
@@ -182,11 +140,11 @@
     height:15px;
     
     border-radius: 2px;
-    border: 2px solid #212121;
+    border: 2px solid $secondary-color;
 }
     
-.user-policy:checked + .user-policy__text::before{
-    background-color: #2196F3;    
+.form__user-policy:checked + .form__user-policy--text::before{
+    background-color: $main-color;    
     border-radius: 2px;
     background-image: url(../images/checkbox.svg) ;
     border: none;
@@ -197,3 +155,26 @@
     transition-duration: 250ms;
     }
 
+.form__submit-btn{
+    width: 200px;
+    height: 50px;
+        
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: $third-color;
+    align-self:center
+    }

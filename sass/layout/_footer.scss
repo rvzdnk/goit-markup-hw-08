@@ -1,6 +1,6 @@
 .footer{
     height: 252px;
-    background: #2F303A;
+    background: $footer-bg-color;
     }
     
 .footer__div{
@@ -17,20 +17,20 @@
 .address{
     width: 246px;
     height: 21px;
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $third-color;
     margin-bottom:9px;
     }
         
 .footer-contact__mail{
     width: 231px;
     height: 21px;
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -44,7 +44,7 @@
 .footer-contact__tel{
     width: 231px;
     height: 21px;
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -60,54 +60,19 @@
     }
 
 .h-join-us{   
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $third-color;
     margin:0;
     }
-
-.social-media-footer {
-    list-style: none;
-    display:flex;
-    padding:0;
-
-    & li:not(:last-child){
-        padding-right:10px;
-        }
-    }
-    
-
-    
-    
-.social-media-footer__icon {
-    fill:#FFFFFF
-    }
-    
-.social-media-footer__link{
-    width:44px;
-    height:44px;
-    background-color:rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-
-    &:hover{
-        background: #2196F3;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;   
-        }
-    }
-    
-
     
 .newsletter__header{
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -115,7 +80,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: $third-color;
     }
     
 .newsletter__form{
@@ -141,7 +106,7 @@
     padding-left:16px;
     
     &::placeholder{
-        font-family: Roboto;
+        font-family: $main-font;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -161,11 +126,11 @@
     width: 200px;
     height: 50px;
             
-    background: #2196F3;
+    background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
     
-    font-family: Roboto;
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -177,6 +142,6 @@
     text-align: center;
     letter-spacing: 0.06em;
     
-    color: #FFFFFF;
-    fill:#FFFFFF
+    color: $third-color;
+    fill:$third-color
     }
