@@ -1,0 +1,123 @@
+
+.description__box{
+    border-radius: 4px;
+    background: $fourth-color;
+    width:100%;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    }
+
+.description__title{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+
+    display: flex;
+    justify-content: center;
+    }
+
+.description__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $fifth-color;    
+    }  
+
+
+@media screen and (min-width: 480px) {
+.description{
+    display:flex;
+    flex-wrap:wrap;
+    }
+
+.description__paragraph:nth-of-type(2n-1){
+    padding-right:30px;
+}
+.description__paragraph{
+    width: 354px;
+    }
+
+    
+.description__box{
+    border-radius: 4px;
+    background: $fourth-color;
+    width:354px;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    }
+    
+.description__title{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    }
+    
+.description__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $fifth-color;    
+    }  
+}
+
+@media screen and (min-width: 768px) {
+.description{
+    display:flex;
+    justify-content:space-evenly;
+    }
+    
+.description__paragraph{
+    width: 270px;
+    }
+    
+.description__box{
+    border-radius: 4px;
+    background: $fourth-color;
+    width:270px;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+    }
+    
+.description__title{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    }
+    
+.description__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $fifth-color;    
+    }  
+}

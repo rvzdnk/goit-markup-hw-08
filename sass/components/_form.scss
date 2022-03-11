@@ -1,5 +1,5 @@
 .form{
-    width:100%;
+    max-width:450px;
     display:flex;
     flex-direction: column;
     padding: 40px;
@@ -14,7 +14,7 @@
     line-height: 1.15;
     
     letter-spacing: 0.03em;
-    white-space: nowrap;
+    
     
     color: $secondary-color;
     
@@ -35,7 +35,7 @@
     color: $fifth-color;
     }
 .form__input{
-    width: 448px;
+    max-width: 370px;
     height: 40px;
     
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -86,7 +86,7 @@
     }}
     
 .form__textarea--comment{
-    width: 448px;
+    max-width: 370px;
     height: 120px;
     
     border: 1px solid rgba(33, 33, 33, 0.2);

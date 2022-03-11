@@ -2,15 +2,16 @@
     list-style: none;
     display:flex;
     flex-wrap:wrap;
-    margin-left:-10px;
-    margin-top:-10px;
+    justify-content: center;
+    padding: 0;
     }
     
+   
 .overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 370px;
+    max-width: 100%;
     height: 297px;
     
     transform: translateY(100%);
@@ -45,13 +46,105 @@
     transition-duration: 250ms;  
     }
     }
- 
+      
+.portfolio__list figure{
+    max-width: 100%;
+    height: auto;
+    background: $third-color;
+    border-bottom: 1px solid $porftolio__list-border-color;
+    }
+    
+.portfolio__figure:hover{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; 
+    }
+    
+.portfolio__figcaption{
+    padding: 20px 24px 20px 24px;
+    }
+    
+.portfolio__title{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;  
+    color: $secondary-color;
+    margin:0;
+    }
+    
+.portfolio__description{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $fifth-color;
+    margin:0;
+    }
+
+@media screen and (min-width: 480px) {
+
+.portfolio__list{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-10px;
+    margin-top:-10px;
+    }
+    
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 297px;
+    
+    transform: translateY(100%);
+    
+    background: rgba(33, 150, 243, 0.9);
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    }
+        
+.overlay__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    
+    line-height: 28px;
+    letter-spacing: 0.03em;
+        
+    color: $third-color;
+    padding:24px;
+    }
+    
+.portfolio__box{
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay{
+    transform: translateY(0);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;  
+    }
+    }
+    
 .portfolio__list li{
     flex-basis: calc(100%/3 -10px);
     margin-left: 10px;
     margin-top: 10px;
     }
-      
+        
 .portfolio__list figure{
     width: 370px;
     height: 404px;
@@ -93,3 +186,103 @@
     color: $fifth-color;
     margin:0;
     }
+}
+
+@media screen and (min-width: 768px) {
+
+.portfolio__list{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-10px;
+    margin-top:-10px;
+    }
+    
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 297px;
+    
+    transform: translateY(100%);
+    
+    background: rgba(33, 150, 243, 0.9);
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    }
+        
+.overlay__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    
+    line-height: 28px;
+    letter-spacing: 0.03em;
+        
+    color: $third-color;
+    padding:24px;
+    }
+    
+.portfolio__box{
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay{
+    transform: translateY(0);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;  
+    }
+    }
+    
+.portfolio__list li{
+    flex-basis: calc(100%/3 -10px);
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+        
+.portfolio__list figure{
+    width: 370px;
+    height: 404px;
+    background: $third-color;
+    border-bottom: 1px solid $porftolio__list-border-color;
+    }
+    
+.portfolio__figure:hover{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; 
+    }
+    
+.portfolio__figcaption{
+    padding: 20px 24px 20px 24px;
+    }
+    
+.portfolio__title{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;  
+    color: $secondary-color;
+    margin:0;
+    }
+    
+.portfolio__description{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $fifth-color;
+    margin:0;
+    }
+}
