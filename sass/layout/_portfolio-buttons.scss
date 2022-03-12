@@ -1,169 +1,59 @@
-.portfolio-buttons{
-    padding-top: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    & button{
-        height: 38px;
-        
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        
-        line-height: 1.625;
-        text-align: center;
-        letter-spacing: 0.03em;
-        
-        color: $secondary-color;
-        background: $fourth-color;
-        border-radius: 4px;
-        
-        cursor:pointer;
+.portfolio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -15px;
+    list-style: none;
+    padding-left:15px;
+  }
+  
+.portfolio-buttons__item {
+    margin-top: 15px;
+    text-decoration: none;
+  
+    &:not(:last-child) {
+      margin-right: 8px;
     }
-
-        & :hover{
-            background: $main-color;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px; 
-            color: $third-color;
-            transition: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;  
-            }
+  }
+  
+.portfolio-buttons__btn {
+    max-width: 100%;
+    padding: 6px 28px;
+    border: 0;
+    border-radius: 4px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: $fourth-color;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: $third-color;
+      background-color: $main-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-     
-.portfolio-buttons--all{
-    width: 103px;
-    }
-    
-.portfolio-buttons--sites{
-    width: 128px;    
-    }
-    
-.portfolio-buttons--apps{
-    width: 145px;
-    }
-    
-.portfolio-buttons--designs{
-    width: 103px;
-    }
-    
-.portfolio-buttons--marketings{
-    width: 130px;   
-    }
+  }   
     
 @media screen and (min-width: 480px) {
 
 .portfolio-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-top: 94px;
-
-    & button{
-        height: 38px;
-        
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        
-        line-height: 1.625;
-        text-align: center;
-        letter-spacing: 0.03em;
-        
-        color: $secondary-color;
-        background: $fourth-color;
-        border-radius: 4px;
-        
-        cursor:pointer;
-
-        & button:hover{
-            background: $main-color;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px; 
-            color: $third-color;
-            transition: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;  
-            }
-        }
-    }
-        
-.portfolio-buttons--all{
-    width: 121px;
-    }
-    
-.portfolio-buttons--sites{
-    width: 93px;    
-    }
-    
-.portfolio-buttons--apps{
-    width: 114px;
-    }
-    
-.portfolio-buttons--designs{
-    width: 91px;
-    }
-    
-.portfolio-buttons--marketings{
-    width: 121px;   
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 30px;
+    margin-top: 0;
     }
 }
 
+
 @media screen and (min-width: 768px) {
 
-.portfolio-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-top: 94px;
-
-    & button{
-        height: 38px;
-        
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        
-        line-height: 1.625;
-        text-align: center;
-        letter-spacing: 0.03em;
-        
-        color: $secondary-color;
-        background: $fourth-color;
-        border-radius: 4px;
-        
-        cursor:pointer;
-
-        & button:hover{
-            background: $main-color;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px; 
-            color: $third-color;
-            transition: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;  
-            }
-        }
-    }
-        
-.portfolio-buttons--all{
-    width: 121px;
-    }
-    
-.portfolio-buttons--sites{
-    width: 93px;    
-    }
-    
-.portfolio-buttons--apps{
-    width: 114px;
-    }
-    
-.portfolio-buttons--designs{
-    width: 91px;
-    }
-    
-.portfolio-buttons--marketings{
-    width: 121px;   
-    }
+.portfolio-buttons__item{
+    margin-top: 0;
+}
 }

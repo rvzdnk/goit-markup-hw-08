@@ -15,6 +15,9 @@
     list-style: none;
     justify-content:space-evenly;
     padding-left:0;
+    & li:not(:last-child){
+        padding-right: 30px;
+    }
     }
 
 .services__name{
@@ -43,12 +46,13 @@
     
     position: relative;
     z-index:0;
-    bottom:82px;
+    bottom:86px;
     }
     
 .services__figure{
-    width: 100%;
-    height: 294px; 
+    & img{
+        max-width: 100%;
+    }
     }
 }
     
