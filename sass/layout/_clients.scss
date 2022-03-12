@@ -1,24 +1,22 @@
 .clients{
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width:100%;
-    height: auto;
     }
 
 .clients__list{
     list-style: none;
     padding-left:0;
+    padding-top: 30px;
 
     display: flex;
     flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
     margin-top: -30px;
     margin-left: -30px;
 
     & li{
-        flex-basis: calc(100%/2 -30px);
+        flex-basis: calc(100%/2 - 30px);
         margin-top: 30px;
         margin-left: 30px;  
     }
@@ -26,12 +24,11 @@
 
 .clients__icon{
     fill:$clients-fill-color;
+    height:92px;
+    width: 100%;
     }
 
 .clients__link{
-    width: 210px;
-    height: 92px;
-
     border: 1px solid $clients-fill-color;
     box-sizing: border-box;
     border-radius: 4px;
@@ -54,99 +51,30 @@
     }
 }
 
-
 @media screen and (min-width: 480px) {
-.clients{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    }
 
 .clients__list{
-    list-style: none;
-    display:flex;
-    padding-left:0;
+    & li{
+        flex-basis: calc(100%/3 - 30px);
+        }
     }
-
-.clients__list li:not(:last-child){
-    padding-right:20px;
-    }
-
-.clients__icon{
-    fill:$clients-fill-color;
-    }
-
-.clients__link{
-    width: 170px;
-    height: 92px;
-
-    border: 1px solid $clients-fill-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover{
-        border-color:$main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;  
-        
-
-        &:hover svg{
-    fill:$main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;      
-    }
-    }
-}    
 }
 
 @media screen and (min-width: 768px) {
-.clients{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    }
-
+   
 .clients__list{
-    list-style: none;
-    display:flex;
-    padding-left:0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0; 
+    & li{
+        flex-basis: none;
+        margin-top: 0;
+        margin-left: 0;
     }
-
-.clients__list li:not(:last-child){
-    padding-right:20px;
+        & :not(:last-child){
+            margin-right:30px;
+        }   
     }
-
-.clients__icon{
-    fill:$clients-fill-color;
-    }
-
-.clients__link{
-    width: 170px;
-    height: 92px;
-
-    border: 1px solid $clients-fill-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover{
-        border-color:$main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;  
-        
-
-        &:hover svg{
-    fill:$main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;      
-                    }
-             }
-        }    
 }

@@ -101,7 +101,7 @@
     }
     
 .newsletter__mail{
-    width: 358px;
+    max-width: 358px;
     height: 50px;
             
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -152,210 +152,62 @@
     }
 
 @media screen and (min-width: 480px) {
+
 .footer{
-    height: 252px;
-    background: $footer-bg-color;
-    }
-    
+   display: flex;
+   justify-content: center;
+   padding-top: 60px;
+   margin: 0; 
+   height: auto;
+} 
+
 .footer__div{
-    display:flex;
-    align-items: baseline;
-    justify-content: space-evenly;   
-    }
-
-.footer-contact{
-    display:flex;
-    flex-direction: column;
-    }
-        
-.address{
-    width: 246px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $third-color;
-    margin-bottom:9px;
-    }
-        
-.footer-contact__mail{
-    width: 231px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom:9px;
-    text-decoration: none;  
-    }
-        
-.footer-contact__tel{
-    width: 231px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;      
-    }
-        
-.join-us{
-    display:flex;
-    flex-direction:column;
-    }
-
-.h-join-us{   
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $third-color;
-    margin:0;
-    }
-    
-.newsletter__header{
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: $third-color;
-    }
-    
-.newsletter__form{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    
-.newsletter__form form{ 
-    padding-right: 12px;
-    }
-    
-.newsletter__mail{
-    width: 358px;
-    height: 50px;
-            
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    
-    background:transparent;
-    padding-left:16px;
-    
-    &::placeholder{
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        
-        color: rgba(255, 255, 255, 0.6); 
-        }
-    }
-    
-
-    
-.newsletter__btn{
-    width: 200px;
-    height: 50px;
-            
-    background: $main-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px; 
-    
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.875;
-    
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    
-    color: $third-color;
-    fill:$third-color
-    }
+}   
+
+.h-join-us{
+    padding-top: 0;
+}
 }
 
 @media screen and (min-width: 768px) {
 .footer{
-    height: 252px;
-    background: $footer-bg-color;
+    display: block;
+    justify-content: none;
+    align-items: none;
+    padding-top: none;
+    padding-bottom: none;
+
+    & .logo {
+        display: flex;
+        justify-content:flex-start;
     }
-    
+}
 .footer__div{
     display:flex;
+    flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-evenly;   
     }
 
 .footer-contact{
     display:flex;
-    flex-direction: column;
+    justify-content: flex-start;
     }
         
 .address{
-    width: 246px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $third-color;
-    margin-bottom:9px;
+    text-align: left;
     }
         
 .footer-contact__mail{
-    width: 231px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom:9px;
-    text-decoration: none;  
+    text-align: left;
     }
         
 .footer-contact__tel{
-    width: 231px;
-    height: 21px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;      
+    text-align: left;    
     }
         
 .join-us{
@@ -364,89 +216,20 @@
     }
 
 .h-join-us{   
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $third-color;
-    margin:0;
+    text-align: left;
     }
     
 .newsletter__header{
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: $third-color;
-    }
-    
+    text-align: left;
+}
+
 .newsletter__form{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    }
-    
-.newsletter__form form{ 
-    padding-right: 12px;
-    }
-    
-.newsletter__mail{
-    width: 358px;
-    height: 50px;
-            
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    
-    background:transparent;
-    padding-left:16px;
-    
-    &::placeholder{
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        
-        color: rgba(255, 255, 255, 0.6); 
+    & button {
+        margin-top: 0px;
         }
-    }
-    
-
-    
-.newsletter__btn{
-    width: 200px;
-    height: 50px;
-            
-    background: $main-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px; 
-    
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.875;
-    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    
-    color: $third-color;
-    fill:$third-color
     }
 }

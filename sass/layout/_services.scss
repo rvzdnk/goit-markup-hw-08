@@ -1,104 +1,13 @@
 .services{
-    padding-top:0px;
-    padding-bottom:0px;
-    display:none;
-    }
-    
-.services__list{
-    display:flex;
-    list-style: none;
-    justify-content:space-evenly;
-    padding-left:0;
-    }
-
-.services__name{
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-        
-    color: $third-color;
-    
-    position: relative;
-    top:50%;
-    transform:translateY(-50%);
-    }
-        
-.services__box{
-    width: 370px;
-    height: 70px;
-    
-    background: rgba(47, 48, 58, 0.8);
-    top:50%;
-    
-    position: relative;
-    z-index:0;
-    bottom:82px;
-    }
-    
-.services__figure{
-    width: 370px;
-    height: 294px; 
-    }
-
-@media screen and (min-width: 480px) {
-.services{
-    padding-top:0px;
-    padding-bottom:0px;
-    visibility: visible;
-    }
-    
-.services__list{
-    display:flex;
-    list-style: none;
-    justify-content:space-evenly;
-    padding-left:0;
-    }
-
-.services__name{
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-        
-    color: $third-color;
-    
-    position: relative;
-    top:50%;
-    transform:translateY(-50%);
-    }
-        
-.services__box{
-    width: 370px;
-    height: 70px;
-    
-    background: rgba(47, 48, 58, 0.8);
-    top:50%;
-    
-    position: relative;
-    z-index:0;
-    bottom:82px;
-    }
-    
-.services__figure{
-    width: 370px;
-    height: 294px; 
-    }
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
+
 .services{
     padding-top:0px;
     padding-bottom:0px;
-    visibility: visible;
+    display:flex;
     }
     
 .services__list{
@@ -126,7 +35,7 @@
     }
         
 .services__box{
-    width: 370px;
+    max-width: 100%;
     height: 70px;
     
     background: rgba(47, 48, 58, 0.8);
@@ -138,7 +47,8 @@
     }
     
 .services__figure{
-    width: 370px;
+    width: 100%;
     height: 294px; 
     }
 }
+    

@@ -63,85 +63,24 @@
         
 
 @media screen and (min-width: 480px) { 
-
-.header{
-    border-bottom:1px solid $header-border-color;
-    }
-    
-.header__box{
-    display:flex;
-    justify-content: space-between;
-    height:80px;
-    }
-
 .header-contact{
     display:flex;
-    align-items: center;
-        
-    font-family: $main-font,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-
-    & a:first-child{
-        margin-right: 20px; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 15px;
     }
-}
-                
-.header-contact-mail{
-    text-decoration:none;
-    color: $fifth-color;
 
-    &:hover{
-        color: $main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-
-        &:hover svg{
-    fill: $main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;   
-        }
-    }
-}
-                
-.header-contact-mail__icon{
-    fill: $fifth-color;    
-    }
-                
-.header-contact-tel{
-    text-decoration:none;
-    color: $fifth-color;
-
-    &:hover{
-        color: $main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-
-        &:hover svg{ 
-    fill:$main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;   
-        } 
-    }
+.header-contact-mail {
+    padding-bottom: 10px;
 }
 }
 
 @media screen and (min-width: 768px) { 
-
-.header{
-    border-bottom:1px solid $header-border-color;
-    }
-    
-.header__box{
-    display:flex;
-    justify-content: space-between;
-    height:80px;
-    }
-
 .header-contact{
     display:flex;
     align-items: center;
+    flex-direction: row;
         
     font-family: $main-font,sans-serif;
     font-style: normal;
@@ -154,40 +93,6 @@
 }
                 
 .header-contact-mail{
-    text-decoration:none;
-    color: $fifth-color;
-
-    &:hover{
-        color: $main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-
-        &:hover svg{
-    fill: $main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;   
-        }
-    }
-}
-                
-.header-contact-mail__icon{
-    fill: $fifth-color;    
-    }
-                
-.header-contact-tel{
-    text-decoration:none;
-    color: $fifth-color;
-
-    &:hover{
-        color: $main-color;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-
-        &:hover svg{ 
-    fill:$main-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;   
-        } 
-    }
+    padding-bottom: 0px;
 }
 }
