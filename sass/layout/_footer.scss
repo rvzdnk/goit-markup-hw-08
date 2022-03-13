@@ -171,9 +171,14 @@
 .h-join-us{
     padding-top: 0;
 }
+
+.join-us{
+margin-left: 30px;
+padding-right: 30px;
+}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1050px) {
 .footer{
     display: block;
     justify-content: none;

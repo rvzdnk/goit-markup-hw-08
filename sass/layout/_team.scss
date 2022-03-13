@@ -1,7 +1,5 @@
 .team{
-    height: auto;
-    background: $fourth-color; 
-    padding: left 80px;
+    background: $fourth-color;  
     }
     
 .team__list {
@@ -11,9 +9,12 @@
     justify-content: center;
     }
 
+.team__member:not(:last-child){
+padding-bottom: 30px;
+}
+
 .team__figure{
     max-width: 100%;
-    height: auto;
     background: $third-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -46,10 +47,6 @@
     }
 
 @media screen and (min-width: 480px) {
-.team{
-    height: auto;
-    padding: left 0px; 
-    }
     
 .team__list {
     display:flex;
@@ -66,13 +63,17 @@
     }
 }
 
+.team__member:not(:last-child){
+    padding-bottom: 0px;
+    }
+
+
 .team__figure {
-    max-height: 536px;
     max-width: 100%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
  
     
 .team__list {
